@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ 1) удаление getFormatNote() в связи с отсутствием использования
+ */
+
 namespace Reminder {
     class Note {
         string name;
@@ -34,12 +38,6 @@ namespace Reminder {
         public override string ToString() {
             return name;
         }
-
-        public string getFormatNote() {
-            return text + ", \n" + date.ToShortDateString();
-        }
-
-
 
         //getters and setters for class variables
         public string getName(){ return name; }
